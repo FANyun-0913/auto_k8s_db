@@ -1,0 +1,18 @@
+import subprocess
+
+def main():
+    # 生成PV
+    subprocess.run(["python3", "generate_pv.py"])
+    # 生成PVC
+    subprocess.run(["python3", "generate_pvc.py"])
+    # 生成PVC
+    subprocess.run(["python3", "generate_secret.py"])
+    # 生成PVC
+    subprocess.run(["python3", "generate_service.py"])
+    # 生成PVC
+    subprocess.run(["python3", "generate_statefulset.py"])
+    # 生成PVC
+    subprocess.run(["python3", "apply.py"])
+if __name__ == "__main__":
+    main()
+~
